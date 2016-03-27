@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FAFAFA" >
+
+        <ImageView
+            android:id="@+id/topbase_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="back"
+            android:src="@drawable/left_arrow" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/topbase_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动预约"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/largetext" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/rl_topbase"
+        android:background="#DEE0DF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_above="@+id/bottom_btn"
+        android:scrollbars="none"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/img_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EFF1F0"
+        android:orientation="horizontal"
+        android:padding="12dip" >
+
+        <TextView
+            android:id="@+id/tv_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="预约人数" />
+
+        <Button
+            android:id="@+id/btn_product_buy"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/seckill_btn_selector"
+            android:enabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="立即预约"
+            android:textColor="@color/text_color_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

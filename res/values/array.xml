@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 润滑油参数 -->
+    <string-array name="bubeoil">
+        <item>全部</item>
+        <item>CI-4+</item>
+        <item>CI-4</item>
+        <item>柴油机油CH-4</item>
+        <item>CH-4</item>
+        <item>CF-4</item>
+        <item>CD</item>
+        <item>手动变速箱油MT-1</item>
+        <item>GL-5</item>
+        <item>15W-40</item>
+        <item>5W-40</item>
+        <item>10W-30/15W-40/20W-50</item>
+        <item>5W-30/10W-40</item>
+        <item>5W-30</item>
+        <item>30/40/50</item>
+        <item>80W-90</item>
+        <item>85W-90</item>
+        <item>80W-90/85W-140</item>
+    </string-array>
+
+    <!-- 轮辋参数,前十个为有内胎 -->
+    <string-array name="tubewheel">
+        <item>全部</item>
+        <item>5.50F-16(有内胎)</item>
+        <item>6.5-20(有内胎)</item>
+        <item>6.00G-16(有内胎)</item>
+        <item>7.00T-20(有内胎)</item>
+        <item>6.5-20 131(有内胎)</item>
+        <item>8.5-20(有内胎)</item>
+        <item>8.00V-20(有内胎)</item>
+        <item>7.50V-20 145(有内胎)</item>
+        <item>7.00T-20 145(有内胎)</item>
+        <item>7.50V-20(有内胎)</item>
+        <item>22.5*16.00(无内胎)</item>
+        <item>22.5*14.00(无内胎)</item>
+        <item>22.5*11.75(无内胎)</item>
+        <item>22.5*9.00(无内胎)</item>
+        <item>22.5*8.25(无内胎)</item>
+        <item>22.5*7.50(无内胎)</item>
+        <item>22.5*6.75(无内胎)</item>
+        <item>22.5*6.00(无内胎)</item>
+        <item>19.5*14.00(无内胎)</item>
+        <item>19.5*8.25(无内胎)</item>
+        <item>19.5*6.75(无内胎)</item>
+        <item>19.5*6.00(无内胎)</item>
+    </string-array>
+    <!-- 轮辋参数,有内胎 -->
+    <string-array name="tubewheelyes">
+        <item>全部</item>
+        <item>5.50F-16(有内胎)</item>
+        <item>6.5-20(有内胎)</item>
+        <item>6.00G-16(有内胎)</item>
+        <item>7.00T-20(有内胎)</item>
+        <item>6.5-20 131(有内胎)</item>
+        <item>8.5-20(有内胎)</item>
+        <item>8.00V-20(有内胎)</item>
+        <item>7.50V-20 145(有内胎)</item>
+        <item>7.00T-20 145(有内胎)</item>
+        <item>7.50V-20(有内胎)</item>
+    </string-array>
+    <!-- 轮辋参数,无内胎 -->
+    <string-array name="tubewheelno">
+        <item>全部</item>
+        <item>22.5*16.00(无内胎)</item>
+        <item>22.5*14.00(无内胎)</item>
+        <item>22.5*11.75(无内胎)</item>
+        <item>22.5*9.00(无内胎)</item>
+        <item>22.5*8.25(无内胎)</item>
+        <item>22.5*7.50(无内胎)</item>
+        <item>22.5*6.75(无内胎)</item>
+        <item>22.5*6.00(无内胎)</item>
+        <item>19.5*14.00(无内胎)</item>
+        <item>19.5*8.25(无内胎)</item>
+        <item>19.5*6.75(无内胎)</item>
+        <item>19.5*6.00(无内胎)</item>
+    </string-array>
+
+     <!-- 垫带参数,无内胎 -->
+    <string-array name="tubediandai">
+        <item>全部</item>
+        <item>6.50R16(垫带)</item>
+        <item>7.00R16(垫带)</item>
+        <item>7.50R15(垫带)</item>
+        <item>7.50R16(垫带)</item>
+        <item>7.50R20/高强度(垫带)</item>
+        <item>8.25R15(垫带)</item>
+        <item>8.25R16/高强度(垫带)</item>
+        <item>8.25R20(垫带)</item>
+        <item>9.00R20(垫带)</item>
+        <item>10.00R15(垫带)</item>
+        <item>10.00R20(垫带)</item>
+         <item>11.00R20/12.00R20(垫带)</item>
+         <item>12.00R24(垫带)</item>
+         <item>8.25-20(垫带)</item>
+         <item>9.00-20(垫带)</item>
+         <item>10.00-20(垫带)</item>
+         <item>11.00-20(垫带)</item>
+         <item>12.00-20(垫带)</item>
+         <item>12.00-24/高强度(垫带)</item>
+         <item>13.00-20(垫带)</item>
+         <item>15.00-24(垫带)</item>
+         <item>13.00-25/高强度(垫带)</item>
+         <item>14.00-20/高强度(垫带)</item>
+         <item>14.00-24/高强度(垫带)</item>
+         <item>14.00-25/高强度(垫带)</item>
+         <item>15.5-25(垫带)</item>
+         <item>16.00-20(垫带)</item>
+         <item>16.00-25/高强度(垫带)</item>
+         <item>16/70-20(垫带)</item>
+         <item>16/70-24(垫带)</item>
+         <item>17.5-25(垫带)</item>
+         <item>18.00-20/20-20(垫带)</item>
+         <item>18.00-25(垫带)</item>
+         <item>20.5-25(垫带)</item>
+         <item>21.00-33(垫带)</item>
+         <item>23.5-25(垫带)</item>
+         <item>23.1-26X(垫带)</item>
+    </string-array>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip" >
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="兔虎养车合肥高新店兔"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_shopdistince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/text_price1"
+            android:text="200km"
+            android:textColor="#ff666666" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/relImage"
+            android:layout_width="82.0dip"
+            android:layout_height="82.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip" >
+
+            <ImageView
+                android:id="@+id/shopIconIv"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:scaleType="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_80" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/text_shopaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="地址: 郑州市丰庆路东风路交叉口向西100米路南"
+                android:textColor="#ff666666" />
+
+            <TextView
+                android:id="@+id/text_shoparea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_shopaddress"
+                android:layout_marginTop="2.0dip"
+                android:singleLine="true"
+                android:text=" 区域: 郑州市"
+                android:textColor="#ff666666" />
+
+            <TextView
+                android:id="@+id/text_shoptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_shoparea"
+                android:layout_marginTop="2.0dip"
+                android:singleLine="true"
+                android:text=" 营业时间: 8:00-12:00"
+                android:textColor="#ff666666" />
+
+            <RelativeLayout
+                android:id="@+id/relcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_shoptime"
+                android:layout_marginTop="2.0dip" >
+
+                <RatingBar
+                    android:id="@+id/shop_ratinglevel"
+                    style="@style/RatingBarsmalStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/shop_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/shop_ratinglevel"
+                    android:gravity="center_vertical"
+                    android:text="4.5"
+                    android:textColor="#ff666666" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

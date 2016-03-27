@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cirlce_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_titlebar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_select_top"
+            android:clickable="true"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/topbase_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_icon_location" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/topbase_back"
+                android:layout_centerVertical="true"
+                android:text="郑州"
+                android:textColor="@color/white"
+                android:textSize="@dimen/largetext" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/topbase_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largetoptext"
+                android:text="卡车团"
+                android:textColor="#fff" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_top_right"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/topbase_location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_home_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbase_location"
+                android:text="消息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smalltext_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_wrapper_park"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/icon_parent_Bottom"
+        android:layout_marginLeft="@dimen/icon_parent_Left"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <ImageButton
+            android:id="@+id/composer_button_park"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_1_Bottom"
+            android:layout_marginLeft="@dimen/icon_1_Left"
+            android:background="@drawable/icon_park"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_2_Bottom"
+            android:layout_marginLeft="@dimen/icon_2_Left"
+            android:background="@drawable/icon_food"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_3_Bottom"
+            android:layout_marginLeft="@dimen/icon_3_Left"
+            android:background="@drawable/icon_hotel"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_wather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_4_Bottom"
+            android:layout_marginLeft="@dimen/icon_4_Left"
+            android:background="@drawable/icon_wather"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_wrapper_rescue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/icon_parent_Bottom"
+        android:layout_marginLeft="@dimen/icon_parent_Left"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <ImageButton
+            android:id="@+id/composer_button_Tire_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_1_Bottom"
+            android:layout_marginLeft="@dimen/icon_1_Left"
+            android:background="@drawable/icon_tire_resuce"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_Repair_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_2_Bottom"
+            android:layout_marginLeft="@dimen/icon_2_Left"
+            android:background="@drawable/icon_repair_resuce"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_tralier_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+           android:layout_marginBottom="@dimen/icon_3_Bottom"
+            android:layout_marginLeft="@dimen/icon_3_Left"
+            android:background="@drawable/icon_trailer_resuce"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/composer_button_other_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_4_Bottom"
+            android:layout_marginLeft="@dimen/icon_4_Left"
+            android:background="@drawable/icon_other_resuce"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_wrapper_news"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/icon_parent_Bottom"
+        android:layout_marginLeft="@dimen/icon_parent_Left"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <ImageButton
+            android:id="@+id/composer_button_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_1_Bottom"
+            android:layout_marginLeft="@dimen/icon_1_Left"
+            android:background="@drawable/icon_home_news"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_2_Bottom"
+            android:layout_marginLeft="@dimen/icon_2_Left"
+            android:background="@drawable/icon_chat"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/composer_button_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_3_Bottom"
+            android:layout_marginLeft="@dimen/icon_3_Left"
+            android:background="@drawable/icon_home_help"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/composer_button_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/icon_4_Bottom"
+            android:layout_marginLeft="@dimen/icon_4_Left"
+            android:background="@drawable/icon_game"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frag_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <com.sy.trucksysapp.widget.CircleMenuLayout
+            android:id="@+id/circle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/turnplate_bg_right" >
+
+            <RelativeLayout
+                android:id="@+id/id_circle_menu_item_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_circle_center"
+                    android:clickable="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </com.sy.trucksysapp.widget.CircleMenuLayout>
+    </FrameLayout>
+
+</RelativeLayout>

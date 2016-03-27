@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:background="@color/group_item_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/select_pressed"
+        android:background="@color/group_item_bg"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/group_item_selector"
+        android:scrollbars="none" >
+    </ListView>
+ 
+</LinearLayout>

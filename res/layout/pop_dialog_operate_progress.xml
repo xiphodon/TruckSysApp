@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_pop_dialog_operate"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_progress_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_click_color_selector"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="15dp"
+            android:text="正在下载..."
+            android:textColor="@color/red_bg"
+            android:textSize="@dimen/smalltext" />
+
+        <ProgressBar
+            android:id="@+id/pb_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:progressDrawable="@drawable/progress_style_delet" />
+
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_click_color_selector"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:text="0/0"
+            android:textColor="@color/text_color_gray_8"
+            android:textSize="@dimen/smalltext" />
+
+        <!-- <Button -->
+        <!-- android:layout_width="70dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:gravity="center" -->
+        <!-- android:background="@drawable/bg_btn_white_selector" -->
+        <!-- android:layout_gravity="center_horizontal" -->
+        <!-- android:textColor="@color/text_color_gray_8" -->
+        <!-- android:layout_marginBottom="20dp" -->
+        <!-- android:textSize="@dimen/smalltext" -->
+        <!-- android:text="取消" -->
+        <!-- /> -->
+    </LinearLayout>
+
+</LinearLayout>

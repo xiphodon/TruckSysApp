@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FAFAFA" >
+
+        <ImageView
+            android:id="@+id/topbase_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="back"
+            android:src="@drawable/left_arrow" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/topbase_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="限时秒杀"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/largetext" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.sy.trucksysapp.widget.LoadingFrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAECEB"
+            android:fadingEdge="vertical"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EAECEB"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" >
+
+                    <com.sy.trucksysapp.widget.AutoScrollViewPager
+                        android:id="@+id/bcviewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </com.sy.trucksysapp.widget.AutoScrollViewPager>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/bcviewpager"
+                        android:background="#33000000"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_point_group"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.sy.trucksysapp.widget.TimeTextView
+                    android:id="@+id/electricity_countdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/product_detail_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="18dip"
+                    android:paddingRight="18dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_sale_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/largetext"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_now_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="¥0.00"
+                            android:textColor="@color/text_color_red"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv_now_price"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_left_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_red_normal_shape"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/midtext" />
+
+                            <TextView
+                                android:id="@+id/tv_old_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="¥ 0.00"
+                                android:textColor="@color/text_color_gray_c3"
+                                android:textSize="@dimen/midtext" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_left_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/midtext" />
+                </LinearLayout>
+
+                <!-- 商品属性start -->
+
+                <LinearLayout
+                    android:id="@+id/ll_product_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/product_detail_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#dfe1e3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="12dip" >
+
+                        <TextView
+                            style="@style/product_text_style"
+                            android:text="商品参数"
+                            android:textColor="#333" />
+
+                        <View
+                            android:layout_width="0dip"
+                            android:layout_height="0dip"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <WebView
+                        android:id="@+id/web_product_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midtext" />
+                </LinearLayout>
+
+                <!-- 商品属性stop -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_white" />
+            </LinearLayout>
+        </ScrollView>
+    </com.sy.trucksysapp.widget.LoadingFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#DEE0DF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFF1F0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dip" >
+
+        <Button
+            android:id="@+id/btn_product_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:background="@drawable/seckill_btn_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:enabled="false"
+            android:text="立即抢购"
+            android:textColor="@color/text_color_white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

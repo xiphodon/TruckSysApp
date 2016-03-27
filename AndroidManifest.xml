@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sy.trucksysapp"
+    android:versionCode="2"
+    android:versionName="2.01.01.20151113" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="com.sy.trucksysapp.page.SystemApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b5eb026a1ac0b4e575225a49296fc492" />
+
+        <activity
+            android:name="com.sy.trucksysapp.page.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx13e6501f06c4de2c" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.phonegap.DroidGap" >
+        </activity>
+        <!-- 刮刮抽奖 -->
+         <activity
+            android:name="com.sy.trucksysapp.page.ScratchGiftPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 转盘抽奖 -->
+         <activity
+            android:name="com.sy.trucksysapp.page.TurntableGiftPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sy.trucksysapp.page.AgreementPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 会员登录 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 会员注册 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.ResetPassActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sy.trucksysapp.user.UserRegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.sy.trucksysapp.user.AppsetActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 我的列表 -->
+        <!-- 收藏列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.collection.CollectionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 收藏明细列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.collection.CollectionDetailFrament"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 个人中心 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.PersonInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 地图页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.map.BasicMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 路线导航 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.ShowMapwayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 反馈页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 商城的首页 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.IndexShopActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 服务商列表页 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.ShopServiceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 供应商详情页 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.SupplierdetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <!-- 商品列表页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.TubeSaleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 内胎商品列表页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.InnerTubeSaleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 轮毂商品列表页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.TubewheelSaleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 润滑油商品列表页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.LubeoilSaleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 商品详情页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.SaleDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 特价商品详情页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.HotSaleDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 服务商详情页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.ServicesDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 商品大图浏览 -->
+        <activity
+            android:name="com.sy.trucksysapp.photoview.ImagePagerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 商品订单列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.ShoplistActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 货运信息 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.order.OrderFragment"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 订单列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.order.ListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 找货源 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.order.SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 货单详细 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.order.DetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 驾驶员页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.DriverIndexActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 新闻页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.NewsmainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 天气页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.WeatherActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 住宿列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.HotelListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 宾馆列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.HotelDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 宾馆地图 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.map.HotelMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 新闻详情 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.NewsDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 餐馆列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.RestaurantListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 餐馆地图 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.map.RestaurantMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 餐馆详情 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.RestaurantDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 停车场列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.ParkListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 停车场地图 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.map.ParkMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 停车场详情 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.ParkDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- l实时路况的显示 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.HighwayConditionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- l路况 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.TrafficActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 左侧菜单 -->
+        <!-- 程序设置 -->
+        <activity
+            android:name="com.sy.trucksysapp.menu.ProduceSetting"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 服务器设置 -->
+        <activity
+            android:name="com.sy.trucksysapp.menu.ServerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 驾驶员生活服务 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.driver.LifeServicesActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 维修救援 -->
+        <!-- 列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.service.ServiceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 列表明细 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.service.ServicesDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 列表地图 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.map.ServiceMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 购物车 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.ShopCartActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 结算付款 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.PaymentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 收货地址 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.AddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 修改和新增收货地址 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.AddressEditActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 订单详细页面用于评价 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.OrderGoodlistActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 评价页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.CommentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 司机认证 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.DriverAuthActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 联系我们 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.AboutActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 充值页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.RechargeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 加油加气站 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.gas.GasListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 加油加气地图页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.map.GasMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 加油加气详细页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.gas.GasDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 消费记录页面 -->
+        <activity
+            android:name="com.sy.trucksysapp.user.UserAccountRecordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.sy.trucksysapp.user.UserAccountmainRecordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.sy.trucksysapp.page.PfragmentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.sy.trucksysapp.page.AppCodeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 限时秒杀 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.SeckillActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        
+        <!-- 爆款产品-->
+        <activity
+            android:name="com.sy.trucksysapp.page.ExplosiveActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 预约界面-->
+        <activity
+            android:name="com.sy.trucksysapp.page.ReserveActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 以旧换新-->
+        <activity
+            android:name="com.sy.trucksysapp.page.ExchangeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 银行卡支付-->
+        <activity
+            android:name="com.sy.trucksysapp.alixpay.BanksPayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 货运信息列表 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.freight.FreightListActivtity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 货运信息详情 -->
+        <activity
+            android:name="com.sy.trucksysapp.page.freight.FreightDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+         <!-- 轮胎救援-->
+        <activity
+            android:name="com.sy.trucksysapp.page.rescue.TireRescueActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 轮胎救援地图页面-->
+        <activity
+            android:name="com.sy.trucksysapp.page.rescue.TireRescueMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 拖车救援-->
+        <activity
+            android:name="com.sy.trucksysapp.page.rescue.TrailerRescueActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 拖车救援地图页面-->
+        <activity
+            android:name="com.sy.trucksysapp.page.rescue.TrailerRescueMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 服务商列表-->
+        <activity
+            android:name="com.sy.trucksysapp.page.shoping.ShopServiceFragment"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        
+        <activity
+            android:name="com.sy.trucksysapp.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver android:name="com.sy.trucksysapp.wxapi.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

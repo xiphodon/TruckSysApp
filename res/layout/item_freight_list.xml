@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_freight_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_freight_address" />
+
+        <TextView
+            android:id="@+id/tv_start_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/img_freight_address"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_black"
+            android:text="货运地址"
+            android:textSize="@dimen/title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_freight_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_freight_time" />
+
+        <TextView
+            android:id="@+id/tv_caeattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/img_freight_time"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:text="发货时间 10月20号"
+            android:textSize="@dimen/largetext" />
+        <TextView
+            android:id="@+id/tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:text="0时0分0秒"
+            android:textSize="@dimen/largetext" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_freight_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_freight_type" />
+
+        <TextView
+            android:id="@+id/tv_car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/img_freight_type"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_color_gray_c1"
+            android:text="蔬菜30吨/13.0米/冷藏车"
+            android:textSize="@dimen/largetext" />
+    </RelativeLayout>
+
+</LinearLayout>

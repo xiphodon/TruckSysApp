@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_titlebar_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_select_top"
+            android:clickable="true"
+            android:onClick="back"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/topbase_back"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/top_back" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/topbase_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加油加气"
+                android:textColor="#fff"
+                android:textSize="@dimen/largetext" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_top_right"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/topbase_location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:src="@drawable/icon_location" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbase_location"
+                android:textSize="@dimen/smalltext_12"
+                android:text="地图"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/shop_select_topbar" />
+
+    <com.sy.trucksysapp.widget.LoadingFrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.sy.trucksysapp.pullrefresh.ui.PullToRefreshListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.sy.trucksysapp.widget.LoadingFrameLayout>
+
+</LinearLayout>

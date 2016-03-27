@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/relImage"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip" >
+
+        <ImageView
+            android:id="@+id/goodsIconIv"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_80" />
+
+        <ImageView
+            android:id="@+id/imgIsNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/isnew"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgIsBargain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/issale"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_goodsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:maxLines="2"
+            android:text="轮胎轮胎"
+            android:textColor="#ff666666"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_goodsName"
+            android:layout_marginTop="5.0dip" >
+
+            <TextView
+                android:id="@+id/text_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现价 : ¥ 250"
+                android:textColor="@color/text_price_red" />
+
+            <TextView
+                android:id="@+id/text_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/text_price1"
+                android:text="原价 ：¥ 300" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel_price"
+            android:layout_marginTop="5.0dip" >
+
+            <TextView
+                android:id="@+id/textlabel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余数量："
+                android:textColor="#ff666666" />
+
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textlabel5"
+                android:text="300"
+                android:textColor="#ff666666" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

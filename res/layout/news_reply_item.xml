@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp" >
+
+        <com.sy.trucksysapp.widget.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res/com.sy.trucksysapp"
+            android:id="@+id/news_headcomment_personimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            app:border_color="#ffffff"
+            app:border_width="1px"
+            app:corner_radius="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/news_headcomment_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微笑人生"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/news_headcomment_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="2014-12-11"
+                android:textColor="#ff8d9299"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/news_headcomment_prasecount"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/culight"
+                android:drawablePadding="6dp"
+                android:text="5"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_headcomment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="为人父母早该如此"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

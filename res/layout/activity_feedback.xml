@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/base_top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_all_tools_advise_input_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:background="@drawable/shape_radius_input_title"
+                android:padding="10dp"
+                android:text="反馈意见"
+                android:textColor="@color/shape_text_edit_caption"
+                android:textSize="@dimen/largetext" />
+
+            <EditText
+                android:id="@+id/edt_input_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_radius_input_content"
+                android:gravity="top"
+                android:hint="请输入你的宝贵意见"
+                android:maxLength="200"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                android:textSize="@dimen/largetext" />
+
+            <TextView
+                android:id="@+id/left_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="你还可以输入200个字符"
+                android:textColor="@color/shape_text_edit_caption" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_button_round"
+                android:text="提交"
+                android:textColor="@color/shape_text_white"
+                android:textSize="@dimen/largetext" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

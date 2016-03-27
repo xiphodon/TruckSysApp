@@ -1,0 +1,87 @@
+<com.sy.trucksysapp.widget.ShopTopBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_sort_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sel1"
+            style="@style/goods_sort_bg_style"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_text"
+                style="@style/goods_sort_name_style"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/detail_xia"
+                android:gravity="center_vertical"
+                android:text="区域" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_sel2"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/goods_sort_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sel2"
+            style="@style/goods_sort_bg_style"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_text"
+                style="@style/goods_sort_name_style"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/detail_xia"
+                android:gravity="center_vertical"
+                android:text="区域" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_sel3"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/goods_sort_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sel3"
+            style="@style/goods_sort_bg_style"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_text"
+                style="@style/goods_sort_name_style"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/detail_xia"
+                android:gravity="center_vertical"
+                android:text="区域" />
+        </RelativeLayout>
+        
+        <View
+             android:id="@+id/line_sel4"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/goods_sort_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sel4"
+            style="@style/goods_sort_bg_style"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_text"
+                style="@style/goods_sort_name_style"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/detail_xia"
+                android:gravity="center_vertical"
+                android:text="服务 " />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.sy.trucksysapp.widget.ShopTopBar>

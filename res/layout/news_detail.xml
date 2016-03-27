@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_titlebar_bg" >
+
+        <ImageView
+            android:id="@+id/topbase_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:onClick="back"
+            android:src="@drawable/top_back" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/topbase_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/largetoptext" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/follow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:onClick=""
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_follow" />
+    </RelativeLayout>
+
+    <com.sy.trucksysapp.widget.LoadingFrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/news_headimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scaleType="fitXY" >
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/news_headtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff8d9299"
+                        android:textSize="11sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/news_headtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:drawableLeft="@drawable/newscenter_point"
+                        android:drawablePadding="7.0dip"
+                        android:textColor="#ff8d9299"
+                        android:textSize="11sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/news_headdate"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_weight="1.0"
+                        android:drawableLeft="@drawable/newscenter_point"
+                        android:drawablePadding="7.0dip"
+                        android:textColor="#ff8d9299"
+                        android:textSize="11sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/news_headsummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffd9d9d9" />
+
+                <WebView
+                    android:id="@+id/news_headcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/news_headcommentlay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffd9d9d9"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="热门评论"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.sy.trucksysapp.widget.LoadingFrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff0f0f0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="5.0dip" >
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/reply_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/border_text_view"
+            android:drawableLeft="@drawable/icon_comment_white"
+            android:drawablePadding="7dip"
+            android:gravity="center_vertical"
+            android:hint="发表评论"
+            android:maxLength="1000"
+            android:minHeight="36.0dip"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textColor="#ff8d9299"
+            android:textCursorDrawable="@null"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="60.0dip"
+            android:layout_height="36.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/button_bkg_light_gray"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/news_headcomment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_comment_red"
+                android:drawablePadding="5dip"
+                android:text="0"
+                android:textColor="#ff2b5161"
+                android:textSize="13.0sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>超时</title>
+<style type="text/css">
+.idiv{
+	background-color: #FEF0EF;
+	padding:5px;
+}
+body{font-size:14px;font-family:微软雅黑,Arial;background:#FEF0EF;text-align:center;color:#333}
+</style>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" >
+function onLoad() {     
+    document.addEventListener("deviceready", onDeviceReady, false);      
+}      
+
+	function onDeviceReady() {             
+     document.addEventListener("backbutton", onBackKeyDown, false);   
+     }      
+
+ function onBackKeyDown() {      
+  cordova.exec(function(winParam){},function(error){},"pageFinish","finish",[]); 
+   }   
+
+ function refresh(){
+ 	cordova.exec(function(winParam){},function(error){},"pageRefresh","refresh",[]);
+ }
+</script>
+</head>
+<body onload="">
+<div class="idiv">
+  <p >页面加载失败！</p>
+  <a href="#" id="refresh" onclick="refresh();">点击重试</a>
+</div>
+</body>
+</html>

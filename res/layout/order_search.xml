@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE" >
+
+    <LinearLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/start_layout"
+            style="@style/goods_sort_bg_style"
+            android:clickable="true"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/start"
+                style="@style/goods_sort_name_style"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/detail_xia"
+                android:gravity="center_vertical"
+                android:text="全国 全境" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exchange_layout"
+            style="@style/goods_sort_bg_style"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/exchange"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_circle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/end_layout"
+            style="@style/goods_sort_bg_style"
+            android:clickable="true"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/end"
+                style="@style/goods_sort_name_style"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/detail_xia"
+                android:gravity="center_vertical"
+                android:text="全国 全境" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.sy.trucksysapp.widget.LoadingFrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <com.sy.trucksysapp.pullrefresh.ui.PullToRefreshListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.sy.trucksysapp.widget.LoadingFrameLayout>
+
+</LinearLayout>

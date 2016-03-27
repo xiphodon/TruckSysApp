@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡车团开放平台"
+                android:textColor="@color/red"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="全新开放"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_truck"
+            android:background="@drawable/logo"
+            android:layout_marginBottom="20dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tv_truck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="卡车团"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="copyrignt 2015 卡车团"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/smalltext_12" />
+    </RelativeLayout>
+
+</LinearLayout>

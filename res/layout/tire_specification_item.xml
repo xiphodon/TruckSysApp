@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="胎面宽："
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:id="@+id/tv_TreadWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15英寸"
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="扁平比："
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:id="@+id/tv_AspectRatio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="70/14"
+            android:textColor="@color/text_color_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="直径："
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:id="@+id/tv_Diameter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1.25米"
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="是否通用："
+            android:textColor="@color/text_color_black" />
+
+        <TextView
+            android:id="@+id/tv_IsCommon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="是"
+            android:textColor="@color/text_color_black" />
+    </LinearLayout>
+
+</LinearLayout>

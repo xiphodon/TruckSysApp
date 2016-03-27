@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/estimate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/text_color_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#dfe1e3"
+        android:textColor="#6f7072"
+        android:text="客户评价"
+       android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v_split"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#EFEFEF" />
+
+    <LinearLayout
+        android:id="@+id/li_parse_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.sy.trucksysapp.widget.ScrollListView
+            android:id="@+id/lv_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#EFEFEF"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#EFEFEF" />
+
+    <TextView
+        android:id="@+id/tv_prase_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="查看更多评价"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/midtext"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_prase_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="暂无评价"
+        android:textColor="@color/text_color_black" />
+
+</LinearLayout>

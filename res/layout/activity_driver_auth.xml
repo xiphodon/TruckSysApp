@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topbase"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FAFAFA" >
+
+        <ImageView
+            android:id="@+id/topbase_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:onClick="back"
+            android:src="@drawable/left_arrow" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/topbase_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="司机认证"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/largetext" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_auth_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="未认证"
+            android:textColor="@color/text_color_orange"
+            android:textSize="@dimen/largetext" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ADADAD" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#EAECEB"
+        android:fadingEdge="vertical"
+        android:scrollbars="@null" >
+
+        <com.sy.trucksysapp.widget.LoadingFrameLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/text_color_white" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EAECEB"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginTop="8dip"
+                    android:text="真实姓名："
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/midtext" />
+
+                <EditText
+                    android:id="@+id/et_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_text"
+                    android:singleLine="true"
+                    android:maxLength="12"
+                    android:textColor="#444" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginTop="8dip"
+                    android:text="身份证号："
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/midtext" />
+
+                <EditText
+                    android:id="@+id/et_edit_idnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_text"
+                    android:singleLine="true"
+                    android:textColor="#444" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_select_item" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="身份证照片"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/largetext" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请上传身份证正面"
+                            android:textSize="@dimen/smalltext_12" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_user_card"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img_right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/app_network_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_driver_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_select_item" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="行驶证照片"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/largetext" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请上传行驶证正面"
+                            android:textSize="@dimen/smalltext_12" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_driver_card"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:layout_toLeftOf="@+id/img_right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/app_network_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_driver_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_select_item" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="驾驶员站在车前照片"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/largetext" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="需要看清驾驶员和车牌号"
+                            android:textSize="@dimen/smalltext_12" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_driver_truck"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img_right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/app_network_arrow" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_button_round"
+                    android:text="提交认证"
+                    android:textColor="@color/shape_text_white"
+                    android:textSize="@dimen/largetext" />
+            </LinearLayout>
+        </com.sy.trucksysapp.widget.LoadingFrameLayout>
+    </ScrollView>
+
+</LinearLayout>

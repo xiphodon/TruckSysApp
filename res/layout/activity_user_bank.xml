@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffededed" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_0px"
+                    android:layout_marginTop="@dimen/dd_dimen_28px" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_84px"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <TextView
+                        style="@style/ZC_26px_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/recharge_money_amount" />
+
+                    <TextView
+                        android:id="@+id/recharge_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@dimen/dd_dimen_20px"
+                        android:textSize="@dimen/dd_dimen_42px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dd_dimen_42px"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_50px"
+                    android:layout_centerVertical="true"
+                    android:background="#ffededed"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:text="@string/choose_bank"
+                    android:textSize="@dimen/dd_dimen_24px" />
+
+                <RelativeLayout
+                    android:id="@+id/choose_bank_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_76px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <ImageView
+                        android:id="@+id/choose_bank_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/bank_logo_default"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/choose_bank_textbox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:hint="@string/myuser_createcred_bind_bank_hint"
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <ImageView
+                        android:id="@+id/recharge_bank_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/app_network_arrow" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_50px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:text="@string/bank_tip"
+                    android:textSize="@dimen/dd_dimen_24px" />
+
+                <RelativeLayout
+                    android:id="@+id/bank_cardnum_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_76px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <TextView
+                        android:id="@+id/card_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/myuser_createcred_cardnum"
+
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <EditText
+                        android:id="@+id/cardNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_104px"
+                        android:layout_marginTop="@dimen/dd_dimen_20px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/bank_card_num_2"
+                        android:inputType="number"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:maxLength="24"
+                        android:singleLine="true"
+                        android:textSize="@dimen/dd_dimen_28px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:background="#cccccc"
+                    android:layout_height="@dimen/dd_dimen_1px" />
+
+                <RelativeLayout
+                    android:id="@+id/people_name_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_76px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/myuser_edit_info_name"
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <EditText
+                        android:id="@+id/cardName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_104px"
+                        android:layout_marginTop="@dimen/dd_dimen_20px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/people_name_2"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:singleLine="true"
+                        android:textSize="@dimen/dd_dimen_28px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_1px"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/people_id_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_76px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/identification"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <EditText
+                        android:id="@+id/identityCard"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_104px"
+                        android:layout_marginTop="@dimen/dd_dimen_20px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/please_input_cardidentity"
+                        android:singleLine="true"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:textSize="@dimen/dd_dimen_28px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bank_phone_num_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/cardMobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dd_dimen_20px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/bank_card_phonenum"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#ff182051"
+                        android:textSize="@dimen/dd_dimen_28px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_1px"
+                    android:background="#ffcccccc"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_20px" />
+
+                <RelativeLayout
+                    android:id="@+id/phone_num_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_76px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/myuserhome_phone"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <EditText
+                        android:id="@+id/phone_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dd_dimen_104px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/myuser_bank_phone_num_hint"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <Button
+                        android:id="@+id/get_verifycode"
+                        android:layout_width="@dimen/dd_dimen_174px"
+                        android:layout_height="@dimen/dd_dimen_62px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/get_authcode"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_orange_selector"
+                        android:textSize="@dimen/dd_dimen_24px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_1px"
+                    android:background="#ffcccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/verifycode_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_76px"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/myuser_verifycode"
+                        android:textColor="#ff666666"
+                        android:textSize="@dimen/dd_dimen_28px" />
+
+                    <EditText
+                        android:id="@+id/verifycode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_104px"
+                        android:layout_marginTop="@dimen/dd_dimen_20px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/input_verifycode_hint"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:textSize="@dimen/dd_dimen_28px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fast_payment_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_28px"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:paddingRight="@dimen/dd_dimen_36px" >
+
+                    <CheckBox
+                        android:id="@+id/checkbox_fastpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/bg_checkbox1"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/ihavereaded"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/checkbox_fastpay"
+                        android:paddingLeft="@dimen/dd_dimen_10px"
+                        android:text="@string/myuser_i_have_readed"
+                        android:textColor="#89000000"
+                        android:textSize="@dimen/dd_dimen_26px" />
+
+                    <TextView
+                        android:id="@+id/fastpay_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@+id/ihavereaded"
+                        android:gravity="center_vertical"
+                        android:text="@string/fast_payment_protocol"
+                        android:textColor="#ff004986"
+                        android:textSize="@dimen/dd_dimen_26px" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/confirm_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_87px"
+                    android:layout_marginBottom="@dimen/dd_dimen_20px"
+                    android:layout_marginLeft="@dimen/dd_dimen_36px"
+                    android:layout_marginRight="@dimen/dd_dimen_36px"
+                    android:layout_marginTop="@dimen/dd_dimen_28px"
+                    android:gravity="center"
+                    android:background="@drawable/shape_button_round"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+                <TextView
+                    android:id="@+id/recharge_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/dd_dimen_36px"
+                    android:textColor="#89000000"
+                    android:textSize="@dimen/dd_dimen_22px" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/base_extra_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/base_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

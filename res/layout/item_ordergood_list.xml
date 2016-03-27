@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_color_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_good_pic"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_centerVertical="true"
+            android:padding="4dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/day_gift_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_good_pic"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_goodname"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="2"
+                    android:text="164/15R21164/15R21164/15R21164/15R21164/15R21164/15R21164/15R21164/15R21164/15R21164/15R21"
+                    android:textColor="@color/text_color_gray_d8"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="￥1200"
+                        android:textColor="@color/text_color_gray_d8"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_price"
+                        android:layout_marginTop="5dp"
+                        android:text="×16"
+                        android:textColor="@color/text_color_gray_d8"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:text="164/15R21"
+                android:textColor="@color/text_color_gray_d8"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" >
+
+        <TextView
+            android:id="@+id/bt_prased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/edit_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="已评价"
+            android:textColor="@color/text_color_gray_d8" />
+        
+        <TextView
+            android:id="@+id/bt_prase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_text_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="评价商品"
+            android:textColor="@color/text_color_gray_d8" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffd9d9d9" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <com.sy.trucksysapp.widget.AutoScrollViewPager
+            android:id="@+id/bcviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.sy.trucksysapp.widget.AutoScrollViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bcviewpager"
+            android:background="#33000000"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_image_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll_point_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/index_gallery_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon_tube"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/index_gallery_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/index_gallery_item_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="轮胎"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/smalltext_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_lub_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/index_gallery_item_image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon_tubeoil"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/index_gallery_item_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/index_gallery_item_image4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="润滑油"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/smalltext_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_Wheel_Gu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/index_gallery_item_image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon_tubewheel"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/index_gallery_item_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/index_gallery_item_image3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="轮辋"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/smalltext_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_Inner_tube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/index_gallery_item_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/icon_innertube"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/index_gallery_item_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/index_gallery_item_image2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="内胎/垫带"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/smalltext_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="今日特卖"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/select_pressed" />
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        >
+        
+    </LinearLayout>
+
+</LinearLayout>

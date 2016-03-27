@@ -1,0 +1,46 @@
+<resources>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="line_ex">12dp</dimen>
+    <!-- 间隔线居左右距离 -->
+    <dimen name="text_ex">5dp</dimen>
+    <!-- 文字居间隔线左右距离 -->
+    <dimen name="title_high">51dp</dimen>
+    <!-- 标题栏高度 -->
+    <dimen name="menu_textsize">13sp</dimen>
+    <!-- 底部导航栏文字大小 -->
+    <dimen name="titletext">21sp</dimen>
+    <!-- 标题文字大小 -->
+    <dimen name="titletextoperate">16sp</dimen>
+    <!-- 标题操作文字大小 -->
+
+    <dimen name="title">20sp</dimen>
+    <dimen name="largetext">18sp</dimen>
+    <dimen name="midtext">16sp</dimen>
+    <dimen name="smalltext">14sp</dimen>
+    <dimen name="smalltext_12">12sp</dimen>
+    <dimen name="smalltext_10">10sp</dimen>
+    <dimen name="largetoptext">22sp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_10">10sp</dimen>
+    <!-- 正文字体大小 -->
+    <!-- 最新首页的图标偏移设置 -->
+    <dimen name="icon_parent_Bottom">100dp</dimen>
+    <dimen name="icon_parent_Left">50dp</dimen>
+    <dimen name="icon_1_Left">90dp</dimen>
+    <dimen name="icon_1_Bottom">250dp</dimen>
+    <dimen name="icon_2_Left">10dp</dimen>
+    <dimen name="icon_2_Bottom">180dp</dimen>
+    <dimen name="icon_3_Left">5dp</dimen>
+    <dimen name="icon_3_Bottom">90dp</dimen>
+    <dimen name="icon_4_Left">60dp</dimen>
+    <dimen name="icon_4_Bottom">0dp</dimen>
+
+</resources>

@@ -1,0 +1,619 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EAECEB"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <com.sy.trucksysapp.widget.AutoScrollViewPager
+            android:id="@+id/home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.sy.trucksysapp.widget.AutoScrollViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/home_viewpager"
+            android:background="#33000000"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_image_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll_point_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_shopping"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="商城"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rescue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_servicehelp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="维修救援"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_service"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="服务商"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_driver"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="驾驶员专栏"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_index_oil"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="加油加气"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_index_news"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="新闻资讯"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_road"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="路况信息"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/index_gallery_item_image8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_freight_info"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/index_gallery_item_text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/index_gallery_item_image8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="货运信息"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/smalltext_12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginBottom="6dp" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:layout_marginTop="10dp" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_shop" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62dp" -->
+        <!-- android:layout_marginRight="3dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/home_shop_selector" -->
+        <!-- android:gravity="center" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="商城" -->
+        <!-- android:textColor="@color/text_color_white" -->
+        <!-- android:textSize="@dimen/midtext" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:background="@drawable/shop_icon" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_rescue" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62dp" -->
+        <!-- android:layout_marginLeft="3dp" -->
+        <!-- android:layout_marginRight="3dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/home_rescue_selector" -->
+        <!-- android:gravity="center" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="维修救援" -->
+        <!-- android:textColor="@color/text_color_white" -->
+        <!-- android:textSize="@dimen/midtext" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:background="@drawable/rescue_icon" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_freight" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62dp" -->
+        <!-- android:layout_marginLeft="3dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/home_freight_selector" -->
+        <!-- android:gravity="center" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="服务商" -->
+        <!-- android:textColor="@color/text_color_white" -->
+        <!-- android:textSize="@dimen/midtext" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="25dp" -->
+        <!-- android:layout_height="25dp" -->
+        <!-- android:background="@drawable/services_icon" /> -->
+        <!-- </LinearLayout> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_driver" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62dp" -->
+        <!-- android:layout_marginRight="3dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/home_driver_selector" -->
+        <!-- android:gravity="center" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="驾驶员专栏" -->
+        <!-- android:textColor="@color/text_color_white" -->
+        <!-- android:textSize="@dimen/midtext" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:background="@drawable/driver_icon" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_oil" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62dp" -->
+        <!-- android:layout_marginLeft="3dp" -->
+        <!-- android:layout_marginRight="3dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/home_oil_selector" -->
+        <!-- android:gravity="center" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="加油加气" -->
+        <!-- android:textColor="@color/text_color_white" -->
+        <!-- android:textSize="@dimen/midtext" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:background="@drawable/oil_icon" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_more" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62dp" -->
+        <!-- android:layout_marginLeft="3dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/home_more_selector" -->
+        <!-- android:gravity="center" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="新闻资讯" -->
+        <!-- android:textColor="@color/text_color_white" -->
+        <!-- android:textSize="@dimen/midtext" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:background="@drawable/news_icon" /> -->
+        <!-- </LinearLayout> -->
+        <!-- </LinearLayout> -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d0d0d0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- android:background="@drawable/hotsale_bg" -->
+
+        <RelativeLayout
+            android:id="@+id/rl_hot_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_select_item"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_hot"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="以旧换新"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/largetext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="旧轮胎可抵现金" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hot_sale_cion" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d0d0d0" />
+
+        <RelativeLayout
+            android:id="@+id/rl_day_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_select_item"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_day_gift"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限时秒杀"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/largetext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="壕礼秒杀\n惊喜不断！" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_day_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/day_gift_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_flash_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_flash_sale_selector"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="限时抢购"
+                android:textColor="@color/red_login"
+                android:textSize="@dimen/largetext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低价商品，限时抢购" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/flash_sale_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

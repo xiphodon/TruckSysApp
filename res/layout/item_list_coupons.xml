@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/check_coupon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_coupon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50.00"
+            android:textColor="@color/text_color_orange"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单满300元使用（不含邮费）"
+            android:textColor="@color/text_color_gray_d8"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/tv_coupon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用期限：2015-06-12 00:00——2015-07-12 00:00"
+            android:textColor="@color/text_color_gray_d8"
+            android:textSize="@dimen/smalltext_12" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check_coupon"
+        style="@style/checkbox_Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:checked="true"
+        android:textColor="@color/shape_text_black"
+        android:textSize="@dimen/size_12" />
+
+</RelativeLayout>

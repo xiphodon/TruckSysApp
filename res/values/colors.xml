@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="select_pressed">#ffd9d9d9</color>
+    <color name="text_price_red">#EA0C0C</color>
+    <color name="page_main_menutext">#7597B3</color>
+    <color name="set_pressed">#73b4e1</color>
+    <color name="set_nomal">#13769F</color>
+    <color name="foot_bg">#e7ecef</color>
+      <!-- 公用颜色 -->
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_gray_c1">#c1c1c1</color>
+    <color name="text_color_gray_c3">#c3c3c3</color>
+    <color name="text_color_gray_ad">#adadad</color>
+    <color name="text_color_gray_8">#888888</color>
+    <color name="text_color_gray_d">#dddddd</color>
+    <color name="text_color_gray_5">#555555</color>
+    <color name="text_color_gray_3">#333333</color>
+    <color name="text_color_gray_f8">#f8f8f8</color>
+    <color name="text_color_blue_358">#335588</color>
+    <color name="text_color_blue_06c">#0066cc</color>
+    <color name="text_color_green">#008000</color>
+    <color name="text_color_red">#ff0000</color>
+    <color name="text_color_rea1">#ff5454</color>
+    <color name="text_color_orange">#ff6600</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="bg_color_f8">#f8f8f8</color>
+    <color name="text_color_gray_d7">#d7d7d7</color>
+    <color name="text_color_gray_d8">#646464</color>
+     <color name="text_color_gray_d10">#333333</color>
+      <color name="text_color_gray_d11">#939393</color>
+    
+    <!-- 状态绿色文字 -->
+    <color name="text_color_green_status">#33d413</color>
+    <!-- 弹出层背景透明色 -->
+    <color name="dialog_bg_color">#14000000</color>
+    <!-- 间隔线颜色 -->
+    <color name="line_color_c1">#e1e1e1</color>
+    <!-- 标题按钮点击颜色 -->
+    <color name="title_btn_click_color">#236EA9</color>
+    <!-- 点击效果淡蓝色 -->
+    <color name="click_color_all">#abd2eb</color>
+    <!-- 头部导航文字点击颜色 -->
+    <color name="rg_text_clcik_color">#0091FF</color>
+    <!-- 头部背景色 -->
+    <color name="title_bg">#2786fb</color>
+    <!-- 文字及蓝色背景 -->
+    <color name="blue_bg">#2786fb</color>
+
+    <!-- 字段模板选中色 -->
+    <color name="app_rb_select">#f3f3f3</color>
+    
+    <color name="bg_color_f0">#f0f0f0</color>
+    
+    <color name="black_divider">#eeeeee</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="shape_text_blue">#ff2388fa</color>
+    <color name="shape_text_white">#ffffffff</color>
+    <color name="shape_text_black">#ff666666</color>
+    <color name="shape_text_edit_caption">#ff878788</color>
+    <color name="shape_text_edit_content">#ffb6b6b7</color>
+    <color name="shape_background_progress">#99ffffff</color>
+    <color name="shape_background_main_b1">#ffffffff</color>
+    <color name="shape_background_main_b2">#ffd5e1ff</color>
+    <color name="shape_background_tools_bar_b1">#ffd5d4d0</color>
+    <color name="shape_background_tools_bar_b2">#ff00a8ff</color>
+    <color name="shape_background_button_pressed_b1">#ff4fa0fa</color>
+    <color name="shape_background_button_pressed_b2">#ff2388fa</color>
+    <color name="grey">#888</color>
+    <color name="grey_dark">#000</color>
+    <!-- 深灰色字体颜色 -->
+    <color name="huise_9a">#9a9a9a</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+        <color name="group_item_bg">#F3F3F3</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ff0000</color>
+    <color name="red2">#D0250E</color>
+    <color name="red_login">#FF4400</color>
+    <color name="type1">#888</color>
+    <color name="type2">#F3BF7B</color>
+    <color name="type3">#7900FF</color>
+    <color name="type4">#36595a</color>
+    <color name="type5">#00A000</color>
+    <color name="service_4s">#0F84F4</color>
+    <color name="service_garage">#FF6600</color>
+    <color name="green">#00A000</color>
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#CD0000</color>
+    <color name="page_bg_common">#ededed</color>
+    <color name="page_bg_detailcommon">#f0f0f0</color>
+    <color name="top_bg_common">#F16033</color>
+    <color name="edt_hinit">#c8c7cd</color>
+    <color name="top_select_pressed">#e87d5c</color>
+    <color name="grey_light">#eee</color>
+    <color name="btn_orange_normal">#FAB264</color>
+    <color name="btn_orange_pressed">#f9a851</color>
+    <color name="register_pressed">#fea483</color>
+    <color name="grey_ec">#ececec</color>
+</resources>
